@@ -111,6 +111,46 @@ de botão primario */
     /* transform: translateY(-15%); */
 }
 
+/* capa */
+
+.capa{
+    background-color: var(--corPrincipal);
+    text-align: center
+}
+
+.capa .titulo h3{
+    font-weight: 600;
+    font-size: 33px;
+    color: #fff;
+    padding: 22px;
+    text-align: center;
+}
+
+.capa .titulo h3 span{
+    color: #5B72EE;
+    font-weight: 700;
+}
+
+.capa .paragrafo p{
+    color: #fff;
+    text-align: center;
+    padding: 22px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.capa .imagem {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.capa .imagem img{
+    display: block;
+    margin: auto;
+    width: 100%;
+    
+}
+
 @media(min-width:768px){
     #menu-btn, .menu-close {
         display: none;
