@@ -10,7 +10,7 @@
 }
 
 :root{
-    --corPrincipal:#5CBABC;
+    --corPrincipal:#5fb9bf;
 }
 
 header {
@@ -84,6 +84,7 @@ de botão primario */
     border-radius: 10px;
 }
 
+
 .btn-primary:hover {
     background-color: #dcdcdcac;
     transition: 1s background;
@@ -107,18 +108,20 @@ de botão primario */
 
 .btn{
     position: relative;
-    /* top: 50%; */
-    /* transform: translateY(-15%); */
+
 }
 
 /* capa */
 
 .capa{
     background-color: var(--corPrincipal);
-    text-align: center
+    text-align: center;
+    border-bottom-left-radius:50% ;
+    border-bottom-right-radius: 50%;
 }
 
 .capa .titulo h3{
+    background-color: var(--corPrincipal);
     font-weight: 600;
     font-size: 33px;
     color: #fff;
@@ -127,11 +130,13 @@ de botão primario */
 }
 
 .capa .titulo h3 span{
+    background-color: var(--corPrincipal);
     color: #5B72EE;
     font-weight: 700;
 }
 
 .capa .paragrafo p{
+    background-color: var(--corPrincipal);
     color: #fff;
     text-align: center;
     padding: 22px;
@@ -148,7 +153,22 @@ de botão primario */
     display: block;
     margin: auto;
     width: 100%;
-    
+    border-bottom-left-radius:50% ;
+    border-bottom-right-radius: 50%;
+}
+
+.capa .botao{
+    padding: 5px 20px;
+    color: #202020;
+    display: inline-block;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    border: none;
+    background-color: #dcdcdc;
+    transition: 1s background;
+    cursor: pointer;
+    border-radius: 10px;
+   
 }
 
 @media(min-width:768px){
@@ -163,10 +183,43 @@ de botão primario */
         width: min-content;
         flex-direction: row;
         align-items: center;
+        gap: 20px;
     }
 
     .btn {
         display: flex;
         gap: 8px;
+        height: 45px;
     }
+
+    .capa{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center; 
+    }
+
+    .texto, .imagem {
+        /* flex = faz com tenha tamanho proporcional */
+         flex: 1; 
+         padding: 20px;  
+    }
+
+    .capa .imagem img{
+        max-width: 100%;
+        border-bottom-left-radius:50% ;
+        border-bottom-right-radius: 100%;
+
+    }
+
+    .capa .texto .paragrafo p {
+       border-radius: 50%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .capa .texto .paragrafo p {
+        font-size: 20px;
+     }
 }
