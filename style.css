@@ -116,8 +116,8 @@ de botão primario */
 .capa{
     background-color: var(--corPrincipal);
     text-align: center;
-    border-bottom-left-radius:50% ;
-    border-bottom-right-radius: 50%;
+    border-radius: 0% 0% 50% 50% / 25% 25% 25% 25%;
+    
 }
 
 .capa .titulo h3{
@@ -197,29 +197,31 @@ de botão primario */
         align-items: center;
         justify-content: space-between;
         text-align: center; 
+        overflow: hidden;
     }
 
     .texto, .imagem {
         /* flex = faz com tenha tamanho proporcional */
          flex: 1; 
          padding: 20px;  
+         padding-bottom: 0;
     }
 
     .capa .imagem img{
         max-width: 100%;
-        border-bottom-left-radius:50% ;
-        border-bottom-right-radius: 100%;
-
+        border-radius: 0% 0% 20% 20% / 25% 25% 25% 25%;
+       
     }
 
-    .capa .texto .paragrafo p {
-       border-radius: 50%;
-    }
 
 }
 
 @media (min-width: 1200px) {
     .capa .texto .paragrafo p {
         font-size: 20px;
+        background: linear-gradient(45deg, blue, green 40%, red);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
      }
 }
