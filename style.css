@@ -171,6 +171,91 @@ de botão primario */
    
 }
 
+/* sucess */
+
+.sucess .numbers{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sucess{
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.sucess h3{
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.sucess p{
+    padding-top: 1rem;
+    line-height:25px ;
+}
+
+.sucess .numbers{
+    padding-top: 1.8rem;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 300px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.numbers-carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 500%;
+}
+
+.number {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: #dcdcdc;
+    color: #202020;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: #c0c0c0; 
+    color: #000000; 
+}
+
+
+button.prev {
+    left: 0;
+}
+
+
+button.next {
+    right: 0;
+}
+
+.number h4{
+    color: #2A6680;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.number p{
+    font-weight: 500;
+}
+
+
 @media(min-width:768px){
     #menu-btn, .menu-close {
         display: none;
@@ -213,15 +298,36 @@ de botão primario */
        
     }
 
+    button.prev, button.next {
+       display: none;
+    }
 
+    .number{
+        flex: 0;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .carousel-container{
+        overflow: visible;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sucess{
+        text-align: center;
+    }
+
+    .number h4{
+       background: linear-gradient( #1874b6,#3196b9,#47b7bd);
+       --webkit-background-clip:text;
+       background-clip: text;
+       color: transparent;
+    }
 }
 
 @media (min-width: 1200px) {
     .capa .texto .paragrafo p {
         font-size: 20px;
-        background: linear-gradient(45deg, blue, green 40%, red);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
      }
 }

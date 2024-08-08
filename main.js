@@ -11,3 +11,27 @@ function closeMenu() {
     const menu = document.getElementById('menu');
     menu.classList.remove('active')
 }
+
+//função passar info do sucess
+let index = 1;
+showSlides(index);
+
+function showSlides(n){
+    const slides = document.querySelectorAll('.number');
+
+    if(n > slides.length){ index = 1}
+    if(n < 1){index = slides.length}
+
+    slides.forEach((slide,i) => {
+        slide.style.transform = `translateX(${-100 * (index - 1)}%)`
+    }
+    )
+}
+
+    function nextSlide(){
+        showSlides(index += 1);
+    }
+
+    function prevSlide(){
+        showSlides(index -= 1);
+    }
