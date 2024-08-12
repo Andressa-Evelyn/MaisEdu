@@ -11,6 +11,7 @@
 
 :root{
     --corPrincipal:#5fb9bf;
+    --corTexto:#676767;
 }
 
 header {
@@ -191,6 +192,7 @@ de botão primario */
 .sucess p{
     padding-top: 1rem;
     line-height:25px ;
+    color: var(--corTexto);
 }
 
 .sucess .numbers{
@@ -254,6 +256,47 @@ button.next {
 .number p{
     font-weight: 500;
 }
+
+/* cloud */
+.cloud{
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.cloud h3{
+    color: #5165d1;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.cloud p{
+    padding-top: 1rem;
+    line-height:25px ;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    color: var(--corTexto);
+}
+
+.cloud .offer {
+    padding-top: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.43);
+    margin-left: 10%;
+    margin-right: 10%;
+    /* display: block; */
+    margin: 7%;
+    border-radius: 10px;
+    box-shadow: rgb(232, 234, 235) 4px 4px 20px 0px;
+}
+
+.offer h2{
+    color: #5165d1;
+}
+
+.offer span h2 {
+    margin-right: 10px; /* Adjust the value as needed */
+}
+
 
 
 @media(min-width:768px){
