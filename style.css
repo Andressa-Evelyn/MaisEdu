@@ -279,14 +279,15 @@ button.next {
 }
 
 .cloud .offer {
-    padding-top: 1.5rem;
-    border: 1px solid rgba(0, 0, 0, 0.43);
+    padding: 1.5em;
     margin-left: 10%;
     margin-right: 10%;
     /* display: block; */
     margin: 7%;
     border-radius: 10px;
-    box-shadow: rgb(232, 234, 235) 4px 4px 20px 0px;
+    box-shadow: 2px 2px 15px -1px rgba(128,94,94,0.62);
+    -webkit-box-shadow: 2px 2px 15px -1px rgba(128,94,94,0.62);
+    -moz-box-shadow: 2px 2px 15px -1px rgba(128,94,94,0.62);
 }
 
 .offer h2{
@@ -297,7 +298,60 @@ button.next {
     margin-right: 10px; /* Adjust the value as needed */
 }
 
+/* about */
 
+.about {
+    text-align: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+.about h3{
+    color: #5165d1;
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.about span{
+    color: var(--corPrincipal);
+}
+
+.about p{
+    padding-bottom: 1.5rem;
+    line-height:25px ;
+    color: var(--corTexto);
+    margin: 3%;
+}
+
+.about .botaoA{
+    padding-bottom: 2rem;
+}
+
+
+.botaoAbout{
+    padding: 10px 30px;
+    color: #202020;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    border: none;
+    background-color: #dcdcdc;
+    transition: 1s background;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.botaoAboutA{
+    padding: 10px 30px;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    border: none;
+    background-color: #707070;
+    transition: 1s background;
+    cursor: pointer;
+    border-radius: 10px;
+}
 
 @media(min-width:768px){
     #menu-btn, .menu-close {
@@ -367,6 +421,41 @@ button.next {
        background-clip: text;
        color: transparent;
     }
+
+    .offers{
+        display: flex;
+        justify-content: center;
+    }
+
+    .cloud .offer {
+        flex: 1;
+        /* padding: 1.5em; */
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        padding-bottom: 1.5em;
+        padding-top: 5rem;
+        margin-left: 50%;
+        margin-right: 10%;
+        margin: 5%;
+        border-radius: 10px;
+        box-shadow: 2px 2px 15px -1px rgba(128,94,94,0.62);
+        -webkit-box-shadow: 2px 2px 15px -1px rgba(128,94,94,0.62);
+        -moz-box-shadow: 2px 2px 15px -1px rgba(128,94,94,0.62);
+    }
+
+    .offer img{
+        margin-top: -100px;
+        margin-bottom: 50px;
+        transform: translateY(-1rem);
+    }
+
+    .about p {
+        word-wrap: break-word; 
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+
 }
 
 @media (min-width: 1200px) {
