@@ -353,6 +353,70 @@ button.next {
     border-radius: 10px;
 }
 
+/* everything */
+
+.everything{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.everything h3{
+    color: #5165d1;
+    font-weight: 800;
+    font-size: 1.5rem;
+    width: 90%;
+    margin: 1rem;
+}
+
+.everything p{
+    padding-bottom: 1rem;
+    line-height:25px ;
+    color: var(--corTexto);
+    margin: 1%; 
+}
+
+.image-container {
+    position: relative;
+    width: 90%; 
+    margin: 30px auto;
+    border-radius: 10px;
+}
+
+.image-container::before,
+.image-container::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 10px;
+}
+
+.image-container::before {
+    top: 0;
+    left: 0;
+    margin-left: -10px;
+    margin-top: -10px;
+    background:#23bdee;
+}
+
+.image-container::after {
+    bottom: 0;
+    right: 0;
+    margin-right: -10px;
+    margin-bottom: -9px;
+    background: #34efa0;
+}
+
+.image-container img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+
+
 @media(min-width:768px){
     #menu-btn, .menu-close {
         display: none;
@@ -430,31 +494,63 @@ button.next {
     .cloud .offer {
         flex: 1;
         /* padding: 1.5em; */
-        padding-left: 1.5em;
-        padding-right: 1.5em;
-        padding-bottom: 1.5em;
-        padding-top: 5rem;
-        margin-left: 50%;
-        margin-right: 10%;
-        margin: 5%;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-bottom: 1em;
+        padding-top: 3rem;
+        margin: 3%;
         border-radius: 10px;
         box-shadow: 2px 2px 15px -1px rgba(128,94,94,0.62);
         -webkit-box-shadow: 2px 2px 15px -1px rgba(128,94,94,0.62);
         -moz-box-shadow: 2px 2px 15px -1px rgba(128,94,94,0.62);
     }
 
+    .cloud p{
+        font-size: 0.9rem;
+    }
+
     .offer img{
         margin-top: -100px;
         margin-bottom: 50px;
-        transform: translateY(-1rem);
+        transform: translateY(1rem);
     }
 
     .about p {
         word-wrap: break-word; 
         width: 50%;
         margin: 0 auto;
+        font-size: 1.1rem;
     }
-    
+
+    .everything{
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .everything p{
+        font-size: 1.1rem;
+    }
+
+    .everything .p1{
+        width: 50%;
+        margin-top: -4rem;
+    }
+
+    .everything .p1 h3,
+    .everything .p1 p{
+        word-wrap: break-word; 
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .everything .p1 h3{
+        margin-bottom: 1.5rem;
+    }
+    .everything .p1 p{
+        margin-bottom: 1.5rem;
+    }
+        
 
 }
 
