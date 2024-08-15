@@ -438,6 +438,9 @@ button.next {
 
 .features .texto h3{
     display: none;
+    margin:0;
+    padding-right:17rem;
+    margin-bottom: 15px;
 }
 
 .features .todo .imagem img{
@@ -449,7 +452,7 @@ button.next {
 
 .features .todo .texto p{
     word-wrap: break-word; 
-    margin: 3px auto;
+    margin:1px 10px;
     font-size: 1rem;
 }
 
@@ -654,7 +657,7 @@ button.next {
 
     .features .todo .texto h3{
         display: block;
-        /* margin-left: -40px; */
+        white-space: nowrap;
     }
     
     .features .todo .imagem img{
@@ -670,8 +673,8 @@ button.next {
    
 
     .features .todo .texto .a img{
-        width: 4%;
-        height: 4%;
+        width: 3.5%;
+        height: 3.5%;
         transform: translateY(0.2rem);
     }
 
@@ -682,8 +685,8 @@ button.next {
     }
 
     .features .todo .texto .b img{
-        width: 4%;
-        height: 4%;
+        width: 3.5%;
+        height: 3.5%;
         transform: translateY(0.2rem);
     }
 
@@ -694,8 +697,8 @@ button.next {
     }
 
     .features .todo .texto .c img{
-        width: 4%;
-        height: 4%;
+        width: 3.5%;
+        height: 3.5%;
         transform: translateY(0.2rem);
     }
     
@@ -706,4 +709,8 @@ button.next {
     .capa .texto .paragrafo p {
         font-size: 20px;
      }
+
+     .features .todo .texto h3{
+        white-space: nowrap;
+    }
 }
