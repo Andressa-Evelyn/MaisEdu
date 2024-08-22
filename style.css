@@ -495,6 +495,69 @@ button.next {
     transform: translateY(0.2rem);
 }
 
+/* tools */
+.tools{
+    text-align: center;
+}
+
+
+.tools h3{
+    color: #5165d1;
+    font-weight: 800;
+    font-size: 1.5rem;
+    width: 90%;
+    margin: 1rem; 
+}
+
+.tools p{
+    padding-bottom: 1rem;
+    line-height:25px ;
+    color: var(--corTexto);
+    margin: 1%; 
+}
+
+.tools img{
+    width: 100%;
+    display: block;
+    margin-bottom: 3rem;
+    justify-content: center;
+}
+
+.metodologia{
+    text-align: center;
+}
+
+.metodologia h3{
+    color: #5165d1;
+    font-weight: 800;
+    font-size: 1.5rem;
+    width: 90%;
+    margin: 1rem; 
+}
+
+.metodologia p{
+    padding-bottom: 1rem;
+    line-height:25px ;
+    color: var(--corTexto);
+    margin: 3%; 
+}
+
+.metodologia img{
+    width: 100%;
+    display: block;
+    margin-bottom: 3rem;
+    justify-content: center;
+}
+
+
+/* course */
+
+.course {
+    text-align: center;
+    background-color: var(--corPrincipal);
+}
+
+
 
 @media(min-width:768px){
     #menu-btn, .menu-close {
@@ -701,7 +764,35 @@ button.next {
         height: 3.5%;
         transform: translateY(0.2rem);
     }
+
+    .tools{
+        display: flex;
+    }
     
+    .tools .t1{
+        width: 50%;
+        margin: 5rem;
+        display: block;
+    }
+
+
+    .tools p{
+        width: 90%;
+    }
+
+    .metodologia{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .metodologia .m1{
+        width: 50%;
+        margin: 5rem;
+    }
+
+    .metodologia img{
+       margin-left: 4rem;
+    }
 
 }
 
