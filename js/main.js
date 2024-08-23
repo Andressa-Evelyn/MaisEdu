@@ -35,3 +35,5 @@ function showSlides(n){
     function prevSlide(){
         showSlides(index -= 1);
     }
+
+    
