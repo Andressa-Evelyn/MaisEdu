@@ -553,11 +553,33 @@ button.next {
 
 .course {
     text-align: center;
-    background-color: var(--corPrincipal);
+    background-color: #67bbc365;
     /* min-height: 100vh; */
     align-items: center;
     width: 100vw;
     justify-content: center;
+}
+
+.logoCourse {
+    height: 268px;
+    width: 87%;
+    overflow: hidden;
+    margin-top: 5rem;
+    border-radius: 40%;
+}
+
+.logoCourse img{
+    height: 100%;
+    width: 100%; 
+    object-fit: cover; 
+}
+
+.course p{
+    padding-bottom: 1rem;
+    line-height:25px ;
+    color: var(--corTexto);
+    margin: 3%; 
+    font-size: 1.05rem;
 }
 
 
@@ -567,6 +589,7 @@ button.next {
     font-size: 1.5rem;
     width: 90%; 
     margin: 2rem;
+    /* font-family: "Roboto", sans-serif; */
 }
 
 
@@ -575,12 +598,14 @@ button.next {
     border-radius: 15px;
     max-width: 300px; 
     overflow: hidden; 
+ 
 }
 
 .card-wrapper {
     display: flex;
     gap: 20px; 
     /* flex-wrap: wrap;  */
+    
 }
 
 .card .image-box {
@@ -604,9 +629,10 @@ button.next {
 }
 
 .card .perfil1 img {
-    height: 40px;
-    width: 40px;
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
+    object-fit: cover; 
 }
 
 .perfil1 .curso {
@@ -860,6 +886,14 @@ button.next {
 
     .metodologia img{
        margin-left: 4rem;
+    }
+
+    .course .c{
+        display: flex;
+    }
+
+    .c .c2{
+        width: 50%;
     }
 
 }
