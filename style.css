@@ -890,10 +890,18 @@ button.next {
 
     .course .c{
         display: flex;
+        width:900px;
+        margin:auto;
+        gap: 5rem;
     }
 
     .c .c2{
         width: 50%;
+        flex:1;
+    }
+
+    .c .c1{
+        flex:1;
     }
 
 }
