@@ -54,3 +54,33 @@ var swiper = new Swiper(".slide_container", {
       },
     },
   });
+
+  let index = 1;
+  showSlides(index);
+  
+  // Função para mostrar os slides
+  function showSlides(n) {
+      const slides = document.querySelectorAll('.number');
+  
+      if (n > slides.length) { 
+          index = 1; 
+      }
+      if (n < 1) { 
+          index = slides.length; 
+      }
+  
+      slides.forEach((slide, i) => {
+          slide.style.transform = `translateX(${-100 * (index - 1)}%)`;
+          slide.style.transition = 'transform 0.5s ease-in-out';
+      });
+  }
+  
+  // Funções para os botões de navegação
+  function nextSlide() {
+      showSlides(index += 1);
+  }
+  
+  function prevSlide() {
+      showSlides(index -= 1);
+  }
+  
