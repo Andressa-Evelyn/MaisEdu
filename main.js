@@ -83,4 +83,7 @@ var swiper = new Swiper(".slide_container", {
   function prevSlide() {
       showSlides(index -= 1);
   }
+
+  
+
   
