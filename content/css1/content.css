@@ -244,6 +244,7 @@ li{
    border-radius: 50px;
    color: #dcdcdc;
    margin: 1rem;
+   margin-bottom: 3rem;
  
 }
 
@@ -341,6 +342,7 @@ li{
     .learning{
         margin-left: 5rem;
         margin-right: 5rem;
+        margin-bottom: 3rem;
     }
 
 
