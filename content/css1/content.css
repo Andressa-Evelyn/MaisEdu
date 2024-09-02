@@ -307,13 +307,29 @@ li{
 
 .perfil h2{
     margin-bottom: 0.5rem;
+    color: #2D3436;
+}
+
+.perfil p{
+    color: #696984;
 }
 
 .card .perfil img{
-    height: 100px;
-    width: 120px;
+    height: 117px;
+    width: 114px;
     border-radius: 8px;
     margin: 1rem;
+}
+
+.swiper{
+    padding: 11px !important;
+}
+
+.container h3{
+    padding: 1.5rem;
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #2D3436;
 }
 
 @media(min-width:768px){
