@@ -332,6 +332,49 @@ li{
     color: #2D3436;
 }
 
+.app{
+    justify-content: center;
+   align-items: center;
+   text-align: center;
+   background-color: #252641;
+   border-radius: 50px;
+   color: white;
+   margin: 1rem;
+   margin-top: 2rem;
+   margin-bottom: 3rem;
+   display: flex;
+   padding: 1rem;
+ 
+}
+
+.app h2{
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+.app .a1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.app .a1 button{
+    padding: 10px 30px;
+    color: white;
+    background-color: var(--corPrincipal);
+    font-weight: 600;
+    display: inline-block;
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+    border: 1px solid #b8b8b8;
+    transition: 1s background;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top:2rem ;
+    margin-bottom: 1.5rem;
+}
+
 @media(min-width:768px){
     #menu-btn, .menu-close {
         display: none;
@@ -395,5 +438,10 @@ li{
         margin-bottom: 3rem;
     }
 
+    .app .a1{
+        width: 100%;
+       padding-right: 6rem;
+        padding-left: 6rem;
+    }
 
 }
